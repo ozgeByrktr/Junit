@@ -8,9 +8,21 @@ import utilities.TestBaseBeforeClass;
 
 public class C02_JsAlerts extends TestBaseBeforeClass {
 
-    // (//button[@onclick='jsAlert()'])
-    // (//button[@onclick='jsConfirm()'])
-    // (//button[@onclick='jsPrompt()'])
+/*
+        Otomasyon yaparken iki tur alert ile karsilasabiliriz
+        1- HTML alerts :
+           HTML kodlari ile olusturulmus alert'lerdir
+           HTML ile olusturuldugu icin inspect edilebilir,
+           locate edilebilir ve driver ile kullanilabilir
+        2- JavaScript Alerts :
+           Inspect yapilamaz, locate edilemez
+           Testlerimiz sirasinda JS alert ile karsilasirsak
+           driver.switchTo().alert() method'larini kullanarak
+           alert'e gecis yapabilir ve alert uzerinde
+           OK, Cancel, Alert yazisini alma getText()
+           ve alert'e yazi yollama sendKeys()
+           method'larini kullanabiliriz.
+     */
 
   /*  3 test method’u olusturup asagidaki gorevi tamamlayin
 1. Test
