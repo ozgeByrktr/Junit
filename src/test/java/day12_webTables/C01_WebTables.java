@@ -16,11 +16,11 @@ public class C01_WebTables extends TestBase {
     1."https://www.amazon.com" adresine gidin
 
 3.Web table tum body’sini yazdirin
-4.Web table’daki satir sayisinin 9 oldugunu test edin
+
 5.Tum satirlari yazdirin
 
 7. 5.sutunu yazdirin
-8.Satir ve sutun sayisini parametre olarak alip, hucredeki bilgiyi döndüren bir method olusturun
+
 
      */
     @Test
@@ -37,6 +37,7 @@ public class C01_WebTables extends TestBase {
         //Tum bodyi tek element olarak locate etmek body
         //içinde gecen bir metnin varligini test etmek gibi görevler için kullanılabilir
         List<WebElement>satirElementlerilist=driver.findElements(By.xpath("//tbody/tr"));
+       //Web table’daki satir sayisinin 10 oldugunu test edin
         int expectedsize=10;
         int actualsize= satirElementlerilist.size();
         Assert.assertEquals(expectedsize,actualsize);
@@ -67,6 +68,7 @@ public class C01_WebTables extends TestBase {
 
 
     }
+   //Satir ve sutun sayisini parametre olarak alip, hucredeki bilgiyi döndüren bir method olusturun
 
     private String dataGetir(int satirNo, int sutunNo) {
 
